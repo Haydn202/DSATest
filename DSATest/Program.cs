@@ -11,12 +11,10 @@ Console.WriteLine(linkedList.Pop());
 
 linkedList.PrintList();*/
 
-var stack = new DSA.Linear.ArrayStack<int>();
+using DSATest.Problems.Arrays;
 
-stack.Push(1);
-stack.Push(2);
-stack.Push(3);
-Console.WriteLine(stack.Peek());
-Console.WriteLine(stack.Pop());
-Console.WriteLine(stack.Pop());
-Console.WriteLine(stack.Pop());
+int[] nums = [1,2,3,1,2,3];
+
+var dI = new DuplicateInteger();
+
+dI.HasDuplicate(nums);
