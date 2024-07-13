@@ -11,10 +11,10 @@ Console.WriteLine(linkedList.Pop());
 
 linkedList.PrintList();*/
 
-using DSATest.Problems.Arrays;
+using DSATest.Problems.HashTables;
 
-int[] nums = [1,2,3,1,2,3];
+Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,5,1,2,3,5,1,2,4]));
 
-var dI = new DuplicateInteger();
+Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,1,1,2,3,1,2,4]));
 
-dI.HasDuplicate(nums);
+Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,3,4,5]));
