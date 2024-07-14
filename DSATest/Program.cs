@@ -11,15 +11,13 @@ Console.WriteLine(linkedList.Pop());
 
 linkedList.PrintList();*/
 
-using DSA.Linear;
+var queue = new DSA.Linear.Queue<String>();
 
-var linkedStack = new ListStack<string>();
+queue.Enqueue("Google");
+queue.Enqueue("Udemy");
+queue.Enqueue("Discord");
 
-linkedStack.Push("Google");
-linkedStack.Push("Udemy");
-linkedStack.Push("Discord");
-
-while (linkedStack.Length > 0)
+while (queue.Length > 0)
 {
-    Console.WriteLine(linkedStack.Pop());
+    Console.WriteLine(queue.Dequeue());
 }
