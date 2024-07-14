@@ -11,10 +11,15 @@ Console.WriteLine(linkedList.Pop());
 
 linkedList.PrintList();*/
 
-using DSATest.Problems.HashTables;
+using DSA.Linear;
 
-Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,5,1,2,3,5,1,2,4]));
+var linkedStack = new ListStack<string>();
 
-Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,1,1,2,3,1,2,4]));
+linkedStack.Push("Google");
+linkedStack.Push("Udemy");
+linkedStack.Push("Discord");
 
-Console.WriteLine(FirstRecurringChar.GetFirstRepeatingChar([2,3,4,5]));
+while (linkedStack.Length > 0)
+{
+    Console.WriteLine(linkedStack.Pop());
+}
