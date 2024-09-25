@@ -4,7 +4,7 @@ namespace DSATest.Problems.Arrays;
 
 public class TwoSum
 {
-    public int[] GetTwoSum(int[] nums, int target)
+    public int[]? GetTwoSum(int[] nums, int target)
     {
         var numDict = new Dictionary<int, int>();
         var index = 0;
@@ -13,7 +13,7 @@ public class TwoSum
         {
             if (numDict.ContainsKey(target - num))
             {
-                return new int[] {numDict[target - num], index};
+                return [numDict[target - num], index];
             }
             
             numDict.Add(num, index);
