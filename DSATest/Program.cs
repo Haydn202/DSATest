@@ -1,6 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using Azure.Messaging.ServiceBus;
 
-/*var linkedList = new DSA.Linear.LinkedList<int>();
+// See https://aka.ms/new-console-template for more information
+
+var linkedList = new DSA.Linear.LinkedList<int>();
 
 linkedList.Append(1);
 linkedList.Append(3);
@@ -9,12 +11,12 @@ linkedList.Insert(2, 1);
 
 Console.WriteLine(linkedList.Pop());
 
-linkedList.PrintList();*/
+linkedList.PrintList();
 
-using DSATest.Problems.Arrays;
+/*using DSATest.Problems.Arrays;
 
 int[] nums = [1,2,3,1,2,3];
 
 var dI = new DuplicateInteger();
 
-dI.HasDuplicate(nums);
+dI.HasDuplicate(nums);*/
