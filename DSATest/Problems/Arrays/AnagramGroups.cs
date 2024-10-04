@@ -4,15 +4,15 @@ namespace DSATest.Problems.Arrays;
 
 public class AnagramGroups
 {
-    public List<IList<string>> GroupAnagrams(IEnumerable<string> strs) {
+    public List<IList<string>> GroupAnagrams(string[] strs) {
         var groups = new Dictionary<string, IList<string>>();
         foreach (var word in strs) {
-            var hash = string.Concat(word.OrderBy(c => c));
+            var hash = new string (word.OrderBy(c => c).ToArray());
             
             if (groups.TryGetValue(hash, out var value)) {
                 value.Add(word);
             } else {
-                groups.Add(hash, [word]);
+                groups.Add(hash, new List<string>{word});
             }
         }
 
